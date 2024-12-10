@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="estilo.css">
 
      <!--CDN BOOTSTRAP-->
         <!--CSS -->
@@ -23,7 +23,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="imagem/lll-removebg-preview.png" alt="Logo do menu" id="icone_menu"></a>
+            <a class="navbar-brand" href="index.html"><img src="lll-removebg-preview.png" alt="Logo do menu" id="icone_menu"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
          </button>
@@ -94,7 +94,198 @@
               cart.push({ name, price });
               alert(`${name} foi adicionado ao carrinho!`);
           });
-      });
+      });/* Resetando margens, paddings e definindo box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo dos títulos */
+h1 {
+    font-size: 2.2rem;
+    color: #007bff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Cartões (cards) */
+.card {
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    font-size: 1.35rem;
+    color: #fff;
+    font-weight: bold;
+    padding: 18px;
+    border-radius: 12px 12px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 1.05rem;
+}
+
+/* Cores de fundo dos cards */
+.card-header.bg-primary {
+    background-color: #007bff;
+}
+
+.card-header.bg-success {
+    background-color: #28a745;
+}
+
+.card-header.bg-warning {
+    background-color: #ffc107;
+}
+
+.card-header.bg-info {
+    background-color: #17a2b8;
+}
+
+/* Estilo para listas dentro dos cards */
+.list-group-item {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botões */
+.btn {
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Botão "Sair da Conta" */
+.text-center .btn-danger {
+    margin-top: 30px;
+}
+
+/* Estilo de links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formatação responsiva */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .card {
+        margin-top: 15px;
+    }
+
+    .card-header {
+        font-size: 1.2rem;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .list-group-item {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+
   </script>
 </body>
 </html>
