@@ -1,0 +1,569 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+.navbar {
+    background-color: #ff6f61;
+    border-bottom: 3px solid #e94e45;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e94e45 !important;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #ff6f61;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e94e45;
+    transform: translateY(-5px);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-5px);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-5px);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.list-group-item {
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    color: #666;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+}
+footer {
+    margin-top: auto; /* Faz o footer ficar na parte inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    background-color: #333;
+    color: #ccc;
+}
+
+.confirmation {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.confirmation h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#purchase-details {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#purchase-items {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#purchase-items li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#purchase-total {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+#print-button, #back-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+#print-button:hover, #back-button:hover {
+    background-color: #218838;
+    transform: translateY(-5px);
+}
+
+
+.promo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.promo-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.promo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.promo-item h3 {
+    color: #ff6f61;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.promo-item p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.promo-item .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.promo-item .btn:hover {
+    background-color: #e94e45;
+    transform: translateY(-5px);
+}
+
+
+#foto_fundador
+{
+    width: 50%;
+    height: 50%;
+    margin-top: 3%;
+    border: 10px double #f2dada;
+}
+
+.col p
+{
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-top: 3%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #ff6f61;
+    border-bottom: 3px solid #e94e45;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e94e45 !important;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#contato {
+    background-color: #fff;
+    padding: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#contato h2 {
+    font-size: 2rem;
+    color: #ff6f61;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contato form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contato label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#contato input, #contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+#contato input:focus, #contato textarea:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+#contato button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contato button:hover {
+    background-color: #e94e45;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.card-header {
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card-body .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-body .btn:hover {
+    background-color: #e94e45;
+}
+
+.card-body .btn-secondary {
+    background-color: #6c757d;
+}
+
+.card-body .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+#menu {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#menu h2 {
+    font-size: 2rem;
+    color: #ff6f61;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#menu .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#menu .menu-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#menu .menu-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+#menu .menu-item .item-info {
+    flex: 1;
+    padding-left: 20px;
+}
+
+#menu .menu-item .item-info h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#menu .menu-item .item-info p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+#menu .menu-item .item-info .price {
+    font-size: 1.3rem;
+    color: #cf0000;
+    font-weight: bold;
+}
+
+#menu .menu-item .btn-add-to-cart {
+    background-color: #cf0000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#menu .menu-item .btn-add-to-cart:hover {
+    background-color: #e94e45;
+}
+
+.description {
+    font-size: 1rem; /* Define um tamanho de fonte consistente para a descrição */
+    color: #666; /* Cor do texto da descrição */
+    margin: 10px 0; /* Margem acima e abaixo da descrição */
+    text-align: center; /* Centraliza o texto da descrição */
+}
+
+#cart {
+    background-color: #7a161680;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    width: 280px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+#cart h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#cart-items {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+#cart-items li {
+    border-bottom: 1px solid #eee;
+    padding: 0.5rem 0;
+}
+
+#cart-total {
+    font-weight: bold;
+    color: #cf0000;
+}
+
+/* Notification */
+#notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#notification.show {
+    opacity: 1;
+}
+
+button {
+    background-color: #ca1616;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+   background-color:none;
+}
+
+/* Container do mapa */
+.mapa {
+    width: 100%;
+    max-width: 1200px; /* Limita a largura do mapa em telas grandes */
+    margin: 60px auto; /* Centraliza e dá margem superior para espaçamento */
+    padding: 20px; /* Espaçamento interno para o mapa não ficar grudado */
+    background-color: #f4f4f4; /* Fundo suave para destacar o mapa */
+    border-radius: 15px; /* Bordas arredondadas para suavizar a estética */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1); /* Sombra com mais profundidade para efeito elegante */
+}
+
+/* Estilo para o iframe do mapa */
+.mapa iframe {
+    width: 100%; /* O mapa ocupa toda a largura disponível */
+    height: 500px; /* Altura fixa para o mapa */
+    border-radius: 10px; /* Bordas arredondadas no iframe */
+    border: none; /* Remove borda padrão do iframe */
+}
+
+/* Título da seção de mapa */
+.mapa-titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #cc6c36; /* Cor que remete a algo mais acolhedor e que lembra o tom da pizza */
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Espaçamento entre as letras */
+}
+
+/* Descrição ou texto adicional para o mapa */
+.mapa-descricao {
+    font-size: 1.2rem;
+    color: #333; /* Cor escura para legibilidade */
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.6;
+    max-width: 800px; /* Limita a largura do texto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
